@@ -1,6 +1,8 @@
-Param ( 
+Param (
+	## Directory Search Base
 	[Parameter(Mandatory=$true,Position=0,ValueFromPipeline=$true,HelpMessage="DN of the OU.")]
 	[string]$searchBase,
+	## Colours must match one of Green, Red, Blue, White, Black
 	[ValidateSet("Green","Red","Blue","White","Black")]
 	[string]$TreeColour = "Green"
 )
